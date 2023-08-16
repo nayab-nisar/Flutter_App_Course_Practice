@@ -1,4 +1,5 @@
 import 'package:datapass/form.dart';
+import 'package:datapass/list.dart';
 import 'package:flutter/material.dart';
 import './home.dart';
 
@@ -9,7 +10,7 @@ void main() {
     routes: {
       '/': (context) => MyHome(),
       'form': (context) => const MyRegister(),
-      // 'home': (context) => const MyHome()
+      'data': (context) => MyData()
     },
   ));
 }
