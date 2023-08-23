@@ -13,7 +13,12 @@ class Home extends State<MyHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Shoping Center"),
+        title: ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, "app");
+          },
+          child: const Text("Newxt Page"),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),

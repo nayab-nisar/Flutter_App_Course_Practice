@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gester/app.dart';
 import './home.dart';
 
 void main() {
@@ -6,8 +7,8 @@ void main() {
     debugShowCheckedModeBanner: false,
     initialRoute: '/',
     routes: {
-      '/': (context) => MyHome(),
-      // 'form': (context) => const MyRegister(),
+      '/': (context) => const MyHome(),
+      'app': (context) => const MyApp(),
       // 'data': (context) => MyData()
     },
   ));
