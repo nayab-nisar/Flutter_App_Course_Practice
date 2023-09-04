@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mytest/about.dart';
+import 'package:mytest/form.dart';
 import 'package:mytest/test3.dart';
 import 'package:mytest/test4.dart';
 
@@ -86,11 +87,11 @@ class MyHome extends StatelessWidget {
             ),
           ]),
         ),
-        body: const TabBarView(children: [
-          MyAbout(),
-          MyTest3(),
-          MyTest4(),
-          Text("hello from groups")
+        body: TabBarView(children: [
+          const MyAbout(),
+          const MyTest3(),
+          const MyTest4(),
+          MyForm()
         ]),
       ),
     );
