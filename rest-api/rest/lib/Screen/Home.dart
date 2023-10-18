@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provides/Screen/Rest-api.dart';
 
 class MyHome extends StatelessWidget {
   const MyHome({super.key});
@@ -88,15 +89,15 @@ class MyHome extends StatelessWidget {
                 Tab(child: Text('Chat')),
                 Tab(child: Text('Status')),
                 Tab(child: Text('Calls')),
-                Tab(child: Text('Community'))
+                Tab(child: Text('Rest-Api'))
               ],
             ),
           ),
-          body: const TabBarView(children: [
-            Text("Hello from chat"),
-            Text("Hello from status"),
-            Text("Hello from calls"),
-            Text("Hello from community"),
+          body: TabBarView(children: [
+            const Text("Hello from chat"),
+            const Text("Hello from status"),
+            const Text("Hello from calls"),
+            RestApi(),
           ]),
         ));
   }
